@@ -1,4 +1,6 @@
-language: objective-c
+os: osx
+osx_image: xcode10.0
+language: swift
 xcode_project: starlord.xcodeproj
-xcode_scheme: starlordUITests
+xcode_scheme: starlord
 xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
