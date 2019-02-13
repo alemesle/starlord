@@ -1,4 +1,4 @@
 os: osx
 osx_image: xcode10.0
 language: swift
-script: xcodebuild clean build test -project starlord.xcodeproj -scheme "starlord" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=12.0,name=iPhone X"
+script: xcodebuild clean build test -project starlord.xcodeproj -scheme "starlord" -sdk iphonesimulator -destination "platform=iOS Simulator,OS=11.4,name=iPhone X"
