@@ -4,4 +4,4 @@ language:
   - swift
 osx_image: xcode10.0
 script:
-  - xcodebuild -scheme starlord -project starlord.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=12.0' build test
+  - xcodebuild -scheme starlord -project starlord.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=11.2' build test
