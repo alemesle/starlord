@@ -1,4 +1,4 @@
-name: Auto Merge
+name: Auto Approve
 on:
   push:
     branches:
