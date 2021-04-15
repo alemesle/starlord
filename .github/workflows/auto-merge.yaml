@@ -4,7 +4,7 @@ on:
     branches:
       - master
 jobs:
-  productionPromotion:
+  createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -18,3 +18,21 @@ jobs:
         uses: peter-evans/create-pull-request@v3
         with:
           branch: master
+  autoApprove:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Approve
+        uses: hmarr/auto-approve-action@v2.0.0
+        # Include the following to only auto-approve pull requests raised by tyrobo 
+        # manual changes to the repo would need manual approvals
+        if: github.actor == 'github-actions'
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+  autoMerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto Merge
+        uses: "pascalgn/automerge-action@v0.4.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          MERGE_METHOD: "rebase"
