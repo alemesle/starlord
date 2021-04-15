@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: `DD*`
+          ref: DD-4123_some_new_branch
       - name: Reset promotion branch
         run: |
           git fetch origin master:master
