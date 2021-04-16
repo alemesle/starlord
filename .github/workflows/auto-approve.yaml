@@ -1,14 +1,12 @@
-name: Auto Approve test
+name: Auto approve NO SENSE
+
 on:
-  pull_request:
-    branches: 
-      - master
-      - test
+  pull_request
+
 jobs:
-  automerge:
+  auto-approve:
     runs-on: ubuntu-latest
     steps:
-      - name: Auto Approve
-        uses: hmarr/auto-approve-action@v2.1.0
-        with:
-          github-token: "${{ secrets.AUTO_MERGE }}"
+    - uses: hmarr/auto-approve-action@v2.1.0
+      with:
+        github-token: "${{ secrets.AUTO_MERGE }}"
