@@ -1,7 +1,7 @@
 name: Auto Approve test
 on:
   pull_request:
-    branches:
+    branches: |
       - master-update
       - test
       - master
