@@ -1,4 +1,4 @@
-name: Auto Merge PR
+name: Auto Merge PR test
 on:
   pull_request:
     types:
