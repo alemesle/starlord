@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: testmaster
+          ref: anything
       - name: Reset promotion branch
         run: |
           git fetch origin master:master
