@@ -19,11 +19,3 @@ jobs:
         with:
           labels: automerge
           branch: master
-  auto-approve:
-    on: pull_request_target
-    runs-on: ubuntu-latest
-    needs: createPullRequest
-    steps:
-      - uses: hmarr/auto-approve-action@v2.1.0
-        with:
-          github-token: "${{ secrets.AUTO_MERGE }}"
