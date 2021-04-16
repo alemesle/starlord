@@ -2,18 +2,18 @@ name: Auto Merge from test
 on:
   push:
     branches:
-      - test
+      - master
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          ref: master
+          ref: test
       - name: Reset promotion branch
         run: |
-          git fetch origin test:test
-          git reset --hard test
+          git fetch origin master:master
+          git reset --hard master
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
