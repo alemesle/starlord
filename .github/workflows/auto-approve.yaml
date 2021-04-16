@@ -1,8 +1,7 @@
 name: Auto Approve test
 on:
   pull_request:
-    branches: 
-      - master
+    branches:
       - test
 jobs:
   automerge:
