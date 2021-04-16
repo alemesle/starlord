@@ -1,4 +1,4 @@
-name: Auto approve
+name: Auto approve NO SENSE
 
 on:
   pull_request
@@ -7,6 +7,6 @@ jobs:
   auto-approve:
     runs-on: ubuntu-latest
     steps:
-    - uses: hmarr/auto-approve-action@v2.0.0
+    - uses: hmarr/auto-approve-action@v2.1.0
       with:
-        github-token: "${{ secrets.GITHUB_TOKEN }}"
+        github-token: "${{ secrets.AUTO_MERGE }}"
