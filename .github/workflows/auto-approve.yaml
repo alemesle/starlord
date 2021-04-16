@@ -11,4 +11,4 @@ jobs:
       - name: Auto Approve
         uses: hmarr/auto-approve-action@v2.1.0
         with:
-          github-token: "${{ secrets.autoMerge }}"
+          github-token: "${{ secrets.AUTO_MERGE }}"
