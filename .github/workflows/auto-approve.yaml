@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - test
+      - master
 jobs:
   automerge:
     runs-on: ubuntu-latest

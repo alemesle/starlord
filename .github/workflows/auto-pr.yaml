@@ -1,4 +1,4 @@
-name: Auto Merge from master
+name: Auto Merge from test
 on:
   push:
     branches:
