@@ -2,7 +2,9 @@ name: Auto Approve test
 on:
   pull_request:
     branches:
-      - '**'
+      - master-update
+      - test
+      - master
 jobs:
   automerge:
     runs-on: ubuntu-latest
