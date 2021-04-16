@@ -1,6 +1,6 @@
 # starlord
 
-i hate github actions
+i hate github actions 2
 
 Master version 12
 
