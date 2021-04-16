@@ -1,4 +1,4 @@
-name: Auto Merge from test
+name: Auto PR from test
 on:
   push:
     branches:
