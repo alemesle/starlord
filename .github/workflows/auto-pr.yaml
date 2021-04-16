@@ -2,7 +2,7 @@ name: Auto Merge from master
 on:
   push:
     branches:
-      - test
+      - master
 jobs:
   createPullRequest:
     runs-on: ubuntu-latest
